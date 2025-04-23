@@ -1,0 +1,54 @@
+.metrics-section {
+  background-color: #edf2f7;
+  padding: 50px 0;
+}
+
+.metrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-item {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.metric-label {
+  font-size: 1.125rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .metrics-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .metric-item {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .metric-item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .metric-item:last-child {
+    margin-bottom: 0;
+  }
+}
